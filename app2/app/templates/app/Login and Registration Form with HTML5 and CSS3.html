@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0075)https://tympanus.net/Tutorials/LoginRegistrationForm/index3.html#toregister -->
+<html lang="en" class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  -->
+        <title>Login and Registration Form with HTML5 and CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Login and Registration Form with HTML5 and CSS3">
+        <meta name="keywords" content="html5, css3, form, switch, animation, :target, pseudo-class">
+        <meta name="author" content="Codrops">
+        <link rel="shortcut icon" href="https://tympanus.net/Tutorials/favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="./Login and Registration Form with HTML5 and CSS3_files/demo.css">
+        <link rel="stylesheet" type="text/css" href="./Login and Registration Form with HTML5 and CSS3_files/style3.css">
+		<link rel="stylesheet" type="text/css" href="./Login and Registration Form with HTML5 and CSS3_files/animate-custom.css">
+	<script type="text/javascript" async="" src="./Login and Registration Form with HTML5 and CSS3_files/ga.js.download"></script><script type="text/javascript">
+		// Please don't use this code on your site
+  		var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-7243260-2']);
+ 		_gaq.push(['_trackPageview']);
+
+  		(function() {
+    			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  		})();
+	</script>
+    <link rel="stylesheet" type="text/css" href="./Login and Registration Form with HTML5 and CSS3_files/demoad.css"></head>
+    <body>
+        <div class="container">
+            <!-- Codrops top bar -->
+            <div class="codrops-top">
+                <a href="http://tympanus.net/Tutorials/CSS3ContentNavigator/index.html#slide-main">
+                    <strong>« Previous Demo: </strong>Responsive Content Navigator
+                </a>
+                <span class="right">
+                    <a href="http://tympanus.net/codrops/2012/03/27/login-and-registration-form-with-html5-and-css3/">
+                        <strong>Back to the Codrops Article</strong>
+                    </a>
+                </span>
+                <div class="clr"></div>
+            </div><!--/ Codrops top bar -->
+            <header>
+                <h1>Login and Registration Form <span>with HTML5 and CSS3</span></h1>
+				<nav class="codrops-demos">
+					<span>Click <strong>"Join us"</strong> to see the form switch</span>
+					<a href="https://tympanus.net/Tutorials/LoginRegistrationForm/index.html">Demo 1</a>
+					<a href="https://tympanus.net/Tutorials/LoginRegistrationForm/index2.html">Demo 2</a>
+					<a href="https://tympanus.net/Tutorials/LoginRegistrationForm/index3.html" class="current-demo">Demo 3</a>
+				</nav>
+            </header>
+            <section>				
+                <div id="container_demo">
+                    <!-- hidden anchor to stop jump http://www.css3create.com/Astuce-Empecher-le-scroll-avec-l-utilisation-de-target#wrap4  -->
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form action="https://tympanus.net/Tutorials/LoginRegistrationForm/index3.html" autocomplete="on"> 
+                                <h1>Log in</h1> 
+                                <p> 
+                                    <label for="username" class="uname" data-icon="u"> Your email or username </label>
+                                    <input id="username" name="username" required="required" type="text" placeholder="myusername or mymail@mail.com">
+                                </p>
+                                <p> 
+                                    <label for="password" class="youpasswd" data-icon="p"> Your password </label>
+                                    <input id="password" name="password" required="required" type="password" placeholder="eg. X8df!90EO"> 
+                                </p>
+                                <p class="keeplogin"> 
+									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping"> 
+									<label for="loginkeeping">Keep me logged in</label>
+								</p>
+                                <p class="login button"> 
+                                    <input type="submit" value="Login"> 
+								</p>
+                                <p class="change_link">
+									Not a member yet ?
+									<a href="https://tympanus.net/Tutorials/LoginRegistrationForm/index3.html#toregister" class="to_register">Join us</a>
+								</p>
+                            </form>
+                        </div>
+
+                        <div id="register" class="animate form">
+                            <form action="https://tympanus.net/Tutorials/LoginRegistrationForm/index3.html" autocomplete="on"> 
+                                <h1> Sign up </h1> 
+                                <p> 
+                                    <label for="usernamesignup" class="uname" data-icon="u">Your username</label>
+                                    <input id="usernamesignup" name="usernamesignup" required="required" type="text" placeholder="mysuperusername690">
+                                </p>
+                                <p> 
+                                    <label for="emailsignup" class="youmail" data-icon="e"> Your email</label>
+                                    <input id="emailsignup" name="emailsignup" required="required" type="email" placeholder="mysupermail@mail.com"> 
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup" class="youpasswd" data-icon="p">Your password </label>
+                                    <input id="passwordsignup" name="passwordsignup" required="required" type="password" placeholder="eg. X8df!90EO">
+                                </p>
+                                <p> 
+                                    <label for="passwordsignup_confirm" class="youpasswd" data-icon="p">Please confirm your password </label>
+                                    <input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" placeholder="eg. X8df!90EO">
+                                </p>
+                                <p class="signin button"> 
+									<input type="submit" value="Sign up"> 
+								</p>
+                                <p class="change_link">  
+									Already a member ?
+									<a href="https://tympanus.net/Tutorials/LoginRegistrationForm/index3.html#tologin" class="to_register"> Go and log in </a>
+								</p>
+                            </form>
+                        </div>
+						
+                    </div>
+                </div>  
+            </section>
+        </div>
+<script src="./Login and Registration Form with HTML5 and CSS3_files/demoad.js.download"></script><div id="cdawrap" style="display: none;"><a href="https://ad.doubleclick.net/ddm/trackclk/N718679.452584BUYSELLADS.COM/B26953268.342937760;dc_trk_aid=534766646;dc_trk_cid=175795063;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" class="carbon-img" target="_blank" rel="noopener"><img src="./Login and Registration Form with HTML5 and CSS3_files/SS.jpg" alt="Squarespace" border="0" height="100" width="130"></a><a href="https://ad.doubleclick.net/ddm/trackclk/N718679.452584BUYSELLADS.COM/B26953268.342937760;dc_trk_aid=534766646;dc_trk_cid=175795063;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;ltd=" class="carbon-text" target="_blank" rel="noopener">Whatever your idea, you can sell it on Squarespace.</a><div class="cda-footer"><a class="carbon-poweredby" href="https://tympanus.net/codrops/advertise/" target="_blank" rel="noopener">Become a sponsor</a><span class="cda-remove" id="cda-remove">Close</span></div></div>
+    
+</body></html>
